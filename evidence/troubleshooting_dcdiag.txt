@@ -1,0 +1,16 @@
+PS C:\Users\Administrator> dcdiag /q
+
+         There are warning or error events within the last 24 hours after the SYSVOL has been
+         shared. Failing SYSVOL replication problems may cause Group Policy problems.
+         ......................... DC failed test DFSREvent
+
+         Error LAB\Enterprise Read-only Domain Controllers doesn't have
+            Replicating Directory Changes
+         access rights for the naming context: DC=lab,DC=local
+         ......................... DC failed test NCSecDesc
+
+         An error event occurred. EventID: 0x00000423
+            Event String: The DHCP service failed to see a directory server for authorization.
+         ......................... DC failed test SystemLog
+
+  See README "Known Issues / Troubleshooting" for diagnosis and status of each failure.

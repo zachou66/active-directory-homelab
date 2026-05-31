@@ -1,0 +1,33 @@
+PS C:\Users\Administrator> Get-ADOrganizationalUnit -Filter * | Select Name, DistinguishedName
+
+Name               DistinguishedName
+----               -----------------
+Domain Controllers OU=Domain Controllers,DC=lab,DC=local
+_Admin             OU=_Admin,DC=lab,DC=local
+Corporate          OU=Corporate,DC=lab,DC=local
+Servers            OU=Servers,DC=lab,DC=local
+AdminUsers         OU=AdminUsers,OU=_Admin,DC=lab,DC=local
+AdminWorkstations  OU=AdminWorkstations,OU=_Admin,DC=lab,DC=local
+ServiceAccounts    OU=ServiceAccounts,OU=_Admin,DC=lab,DC=local
+Finance            OU=Finance,OU=Corporate,DC=lab,DC=local
+Users              OU=Users,OU=Finance,OU=Corporate,DC=lab,DC=local
+Computers          OU=Computers,OU=Finance,OU=Corporate,DC=lab,DC=local
+Groups             OU=Groups,OU=Finance,OU=Corporate,DC=lab,DC=local
+Engineering        OU=Engineering,OU=Corporate,DC=lab,DC=local
+Users              OU=Users,OU=Engineering,OU=Corporate,DC=lab,DC=local
+Computers          OU=Computers,OU=Engineering,OU=Corporate,DC=lab,DC=local
+Groups             OU=Groups,OU=Engineering,OU=Corporate,DC=lab,DC=local
+HR                 OU=HR,OU=Corporate,DC=lab,DC=local
+Users              OU=Users,OU=HR,OU=Corporate,DC=lab,DC=local
+Groups             OU=Groups,OU=HR,OU=Corporate,DC=lab,DC=local
+Computers          OU=Computers,OU=HR,OU=Corporate,DC=lab,DC=local
+Sales              OU=Sales,OU=Corporate,DC=lab,DC=local
+Users              OU=Users,OU=Sales,OU=Corporate,DC=lab,DC=local
+Computers          OU=Computers,OU=Sales,OU=Corporate,DC=lab,DC=local
+Groups             OU=Groups,OU=Sales,OU=Corporate,DC=lab,DC=local
+FileServers        OU=FileServers,OU=Servers,DC=lab,DC=local
+UpdateServers      OU=UpdateServers,OU=Servers,DC=lab,DC=local
+DomainControllers  OU=DomainControllers,OU=Servers,DC=lab,DC=local
+_Disabled          OU=_Disabled,DC=lab,DC=local
+DisabledUsers      OU=DisabledUsers,OU=_Disabled,DC=lab,DC=local
+DisabledComputers  OU=DisabledComputers,OU=_Disabled,DC=lab,DC=local

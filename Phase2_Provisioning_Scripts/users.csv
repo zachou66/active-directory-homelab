@@ -1,0 +1,7 @@
+FirstName,LastName,Department,JobTitle,Manager,StartDate,Office,RoleGroups
+Alice,Thompson,Finance,Financial Analyst,jane.finance,2026-06-01,Boston HQ,R-Finance-Accountants
+Robert,Nguyen,Engineering,Software Engineer,john.engineer,2026-06-01,Boston HQ,R-Engineering-Developers
+Lisa,Patel,HR,HR Coordinator,sara.hr,2026-06-01,Boston HQ,R-HR-Generalists
+James,Carter,Sales,Sales Representative,mike.sales,2026-06-01,Boston HQ,R-Sales-Reps
+Emily,Brooks,Finance,Accounts Payable,jane.finance,2026-06-01,Boston HQ,R-Finance-Accountants
+Derek,Morris,Engineering,DevOps Engineer,john.engineer,2026-06-01,Boston HQ,R-Engineering-Developers

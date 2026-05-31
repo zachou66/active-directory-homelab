@@ -1,0 +1,16 @@
+PS C:\Users\Administrator> Get-ADGroupMember R-Finance-Accountants
+
+distinguishedName : CN=Jane Finance,OU=Users,OU=Finance,OU=Corporate,DC=lab,DC=local
+name              : Jane Finance
+objectClass       : user
+SamAccountName    : jane.finance
+
+distinguishedName : CN=Alice Thompson,OU=Users,OU=Finance,OU=Corporate,DC=lab,DC=local
+name              : Alice Thompson
+objectClass       : user
+SamAccountName    : alice.thompson
+
+distinguishedName : CN=Emily Brooks,OU=Users,OU=Finance,OU=Corporate,DC=lab,DC=local
+name              : Emily Brooks
+objectClass       : user
+SamAccountName    : emily.brooks

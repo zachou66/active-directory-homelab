@@ -1,0 +1,31 @@
+PS C:\Users\Administrator> Invoke-Command -ComputerName WIN11-CLIENT1 -ScriptBlock { gpresult /r }
+
+RSOP data for LAB\Administrator on WIN11-CLIENT1 : Logging Mode
+----------------------------------------------------------------
+OS Configuration:            Member Workstation
+OS Version:                  10.0.26200
+Site Name:                   Default-First-Site-Name
+
+COMPUTER SETTINGS
+------------------
+    Group Policy was applied from:      DC.lab.local
+    Domain Name:                        LAB
+
+    Applied Group Policy Objects
+    -----------------------------
+        BL-Computer-USBRestriction
+        BL-Computer-EnableRDP
+        IntuneJoin
+        Password & Lockout Policy
+        Default Domain Policy
+        BL-Computer-AuditPolicy
+
+USER SETTINGS
+--------------
+    Applied Group Policy Objects
+    -----------------------------
+        N/A
+
+  NOTE: User Configuration shows N/A because this gpresult was run in the context
+  of the Administrator account. User-side policies (e.g. BL-User-DesktopRestrictions)
+  do not apply to administrators. See README Phase 3 status.

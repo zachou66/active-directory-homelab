@@ -1,0 +1,24 @@
+PS C:\Users\Administrator> Invoke-Command -ComputerName WIN11-CLIENT1 -ScriptBlock { dsregcmd /status }
+
++----------------------------------------------------------------------+
+| Device State                                                         |
++----------------------------------------------------------------------+
+
+             AzureAdJoined : YES
+          EnterpriseJoined : NO
+              DomainJoined : YES
+                DomainName : LAB
+               Device Name : Win11-CLIENT1.lab.local
+
++----------------------------------------------------------------------+
+| Device Details                                                       |
++----------------------------------------------------------------------+
+
+               KeyProvider : Microsoft Platform Crypto Provider
+              TpmProtected : YES
+          DeviceAuthStatus : SUCCESS
+
+  This confirms WIN11-CLIENT1 is Hybrid Azure AD Joined: domain-joined on-prem AND
+  registered to Entra ID, with device authentication succeeding against a TPM-protected
+  device key. (User-side SSO/PRT fields are omitted here because this was run as a local
+  admin account that is not Entra-synced; they are not relevant to the device-join proof.)
