@@ -1,4 +1,3 @@
-
 # Enterprise Windows Server Infrastructure Lab
 
 > A production-style Windows Server 2022 environment built end-to-end: Active Directory with an AGDLP permission model, PowerShell-automated user provisioning, CIS-aligned GPO hardening, and Microsoft 365 hybrid identity with Intune MDM.
@@ -51,7 +50,7 @@ A CSV-driven, idempotent onboarding script: derives SAM/UPN, creates the user in
 
 → Script: [`Phase2_Provisioning_Scripts/Onboarding.ps1`](Phase2_Provisioning_Scripts/Onboarding.ps1)
 → Sample input: [`Phase2_Provisioning_Scripts/users.csv`](Phase2_Provisioning_Scripts/users.csv)
-→ Transcript logs: [`Phase2_Provisioning_Scripts/sample-logs/`](Phase2_Provisioning_Scripts/sample-logs/)
+→ Logging: each run writes a timestamped `Start-Transcript`. Capturing a sample transcript — the `CREATED`-then-`SKIPPED` idempotency proof — is an open item; see [`sample-logs/`](Phase2_Provisioning_Scripts/sample-logs/).
 
 ### Phase 3 — GPO Hardening
 
@@ -130,13 +129,14 @@ This section is intentional. A homelab where everything passed on the first try 
 
 - **Verify user-side GPO** by testing `gpresult` as a standard Finance user (closes Phase 3).
 - **Resolve the two open troubleshooting items** above (closes Phase 4 compliance + clean `dcdiag`).
+- **Capture Phase 2 transcripts** — re-run `Onboarding.ps1` to save the `CREATED`/`SKIPPED` idempotency proof to `sample-logs/`.
 - **Offboarding script** — companion to onboarding, with an audit CSV of removed group memberships.
 - **Conditional Access in Entra ID** — require a compliant device for M365 access.
-- **Win32 app deployment via Intune** to `CLIENT1`.
+- **Win32 app deployment via Intune** to `WIN11-CLIENT1`.
 
 ## Author
 
 **Zachary Ouldsfiya** — UMass Boston · BS Information Technology (System Administration Track) · May 2026
-CompTIA Security+ · Microsoft AZ-900 (in progress) 
+CompTIA Security+ · Microsoft AZ-900 (in progress)
 ouldsfiyazachary@gmail.com
 
